@@ -1,0 +1,3 @@
+We are using Spring Boot 2.5. With 2.4 the way how configuration files are handled has changed.
+Right now I am facing the issue that something that I have defined in the `src/main/resources/application.yml` is not picked up during the tests. I am using the `@ConfigurationProperties` annotation on a class and it holds a `Map<String, String>`. When I copy the properties to `src/test/resources/application.yml` everything starts working.
+I am expecting Spring to merge all properties in a tree across `application.yml` files and for this to work without duplicating the properties. What am I missing? I am really puzzled. Spring cloud config is turned off during tests.

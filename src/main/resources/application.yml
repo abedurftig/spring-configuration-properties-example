@@ -1,0 +1,6 @@
+#spring:
+#  config:
+#    use-legacy-processing: true
+cpe:
+  notroot:
+    someProperty: "src/main/resources"
